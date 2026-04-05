@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    /* fonts */
+    --font-dark: #0A0A0A;
+    --font-dark-2: #666666;
+    --font-dark-3: #999999;
+}
+
+.dark-font {
+    color: var(--font-dark);
+}
+
+.dark-font-2 {
+    color: var(--font-dark-2);
+}
+
+.dark-font-3 {
+    color: var(--font-dark-3);
+}
