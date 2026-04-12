@@ -3,6 +3,7 @@ import '../styles/footer.css'
 import footerHero from '../../assets/images/home1-bg-img14-645x500.jpg'
 import logo from '../../assets/images/footer-logo.svg'
 import starBg from '../../assets/images/footer-icon-bg.png'
+import { FaFacebookF, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
     return (
@@ -57,9 +58,9 @@ const Footer = () => {
                         </div>
 
                         <div className="socials">
-                            <a href="#">F</a>
-                            <a href="#">T</a>
-                            <a href="#">L</a>
+                            <a href="#"><FaFacebookF /></a>
+                            <a href="#"><FaXTwitter /></a>
+                            <a href="#"><FaLinkedinIn /></a>
                         </div>
 
                     </div>

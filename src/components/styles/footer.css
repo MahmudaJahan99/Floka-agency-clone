@@ -75,7 +75,7 @@
 }
 
 /* Section 3 */
-.footer-info{
+.footer-info {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -94,8 +94,9 @@
     color: var(--font-dark-3);
 }
 
-.address {
+.address p {
     color: var(--font-light);
+    margin-bottom: 10px;
 }
 
 /* Social */
@@ -106,21 +107,39 @@
 }
 
 .socials a {
-    width: 35px;
-    height: 35px;
+    position: relative;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background: #222;
+    border: 1px solid var(--font-dark-3);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    text-decoration: none;
+    overflow: hidden;
+    transition: color 0.3s;
+    z-index: 1;
 }
 
-/* Copyright */
-.copyright {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 12px;
-    opacity: 0.6;
+/* Create the fill layer */
+.socials a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--font-light);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+}
+
+/* Hover effect */
+.socials a:hover::before {
+    transform: scale(1);
+}
+
+.socials a:hover {
+    color: var(--font-dark);
 }
