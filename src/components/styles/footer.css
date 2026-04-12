@@ -1,7 +1,7 @@
 /* Base */
 .footer-box {
     background: var(--font-dark);
-    margin: 20px;
+     margin: 10px;
     padding: 20px;
     border-radius: 20px;
     color: var(--font-light);
@@ -9,7 +9,7 @@
 
 /* Heading */
 .footer-heading {
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 30px;
@@ -55,7 +55,7 @@
 
 .brand-text {
     text-align: center;
-    font-size: 150px;
+    font-size: 50px;
     font-weight: 700;
     letter-spacing: 10px;
 
@@ -102,6 +102,7 @@
 /* Social */
 .socials {
     display: flex;
+    justify-content: center;
     gap: 10px;
     margin-top: 10px;
 }
@@ -142,4 +143,62 @@
 
 .socials a:hover {
     color: var(--font-dark);
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+      .footer-box {
+        margin: 20px;
+        padding: 40px;
+    }
+    .footer-content {
+        flex-direction: initial;
+    }
+
+    .brand-text {
+        letter-spacing: 5px;
+    }
+
+    .footer-links {
+        text-align: left;
+    }
+
+    .brand-text {
+        font-size: 100px;
+    }
+
+    .socials {
+    justify-content: initial;
+}
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr 1fr;
+        align-items: flex-start;
+    }
+
+    .brand-text {
+        font-size: 120px;
+    }
+
+    .footer-links span a {
+        font-size: 30px;
+    }
+
+    .footer-info p,
+    .address p {
+        font-size: 20px;
+    }
+
+    /* Social */
+    .socials {
+        gap: 20px;
+    }
 }
