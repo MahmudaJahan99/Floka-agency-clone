@@ -20,3 +20,34 @@
 .dark-font-3 {
     color: var(--font-dark-3);
 }
+
+/* GLOBAL */
+a {
+    text-decoration: none;
+}
+
+/* Hover effects */
+.nav-links a,
+.mobile-menu a,
+.footer-links a {
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: #0A0A0A;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 80%;
+}
+
+.footer-links a::after {
+    background: #fff;
+}

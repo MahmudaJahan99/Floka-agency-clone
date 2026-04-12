@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/footer.css'
 import footerHero from '../../assets/images/home1-bg-img14-645x500.jpg'
 import logo from '../../assets/images/footer-logo.svg'
+import starBg from '../../assets/images/footer-icon-bg.png'
 
 const Footer = () => {
     return (
@@ -32,36 +33,35 @@ const Footer = () => {
 
                     </div>
 
-                    {/* -- Section 2 -- */}
-                    <div className="footer-col footer-links">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+                    {/* Links */}
+                    <div className="footer-links nav-links flex flex-col gap-5 text-center">
+                        <span><a href="#">Home</a></span>
+                        <span><a href="#">About</a></span>
+                        <span><a href="#">Services</a></span>
+                        <span><a href="#">Portfolio</a></span>
+                        <span><a href="#">Contact</a></span>
                     </div>
 
                     {/* -- Section 3 -- */}
                     <div className="footer-col footer-info">
-                        <div className="info-bg">
-                            <p>
-                                At <span>Floka</span>, we believe furniture should be more than just functional—it should tell your story. With a focus on timeless design, sustainable materials, and expert craftsmanship, we create pieces that feel personal.
-                            </p>
 
-                            <div className="address">
-                                <p>info@floka.com</p>
-                                <p>+123 456 789 10</p>
-                                <p>12/A, Dhaka, Bangladesh</p>
-                            </div>
+                        <img src={starBg} alt="" />
+                        <p>
+                            At <a href="#" className='text-white font-semibold'>Floka</a>, we believe furniture should be more than just functional—it should tell your story. With a focus on timeless design, sustainable materials, and expert craftsmanship, we create pieces that feel personal.
+                        </p>
 
-                            <div className="socials">
-                                <a href="#">F</a>
-                                <a href="#">T</a>
-                                <a href="#">L</a>
-                            </div>
+                        <div className="address">
+                            <p>info@floka.com</p>
+                            <p>+123 456 789 10</p>
+                            <p>12/A, Dhaka, Bangladesh</p>
                         </div>
+
+                        <div className="socials">
+                            <a href="#">F</a>
+                            <a href="#">T</a>
+                            <a href="#">L</a>
+                        </div>
+
                     </div>
 
                 </div>
