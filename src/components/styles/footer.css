@@ -1,7 +1,7 @@
 /* Base */
 .footer-box {
     background: var(--font-dark);
-     margin: 10px;
+    margin: 10px;
     padding: 20px;
     border-radius: 20px;
     color: var(--font-light);
@@ -151,10 +151,11 @@
 
 /* Tablet */
 @media (min-width: 768px) {
-      .footer-box {
+    .footer-box {
         margin: 20px;
         padding: 40px;
     }
+
     .footer-content {
         flex-direction: initial;
     }
@@ -172,8 +173,8 @@
     }
 
     .socials {
-    justify-content: initial;
-}
+        justify-content: initial;
+    }
 }
 
 /* Desktop */
