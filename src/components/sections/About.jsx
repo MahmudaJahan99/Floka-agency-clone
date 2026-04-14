@@ -5,6 +5,7 @@ const About = () => {
     const text = "CREATIVITY & TECHNOLOGY";
     return (
         <section className='section-sm'>
+            {/* top section */}
             <div className='grid gap-10 md:grid-cols-5'>
                 <div className='md:col-span-2 flex flex-col gap-5'>
                     <div className="logo-circling-container">
@@ -36,6 +37,12 @@ const About = () => {
 
             </div>
 
+            {/* bottom section */}
+            <div>
+                <div>
+                    <span>225</span>
+                </div>
+            </div>
         </section>
     );
 };
