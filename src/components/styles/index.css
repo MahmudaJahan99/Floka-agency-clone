@@ -62,6 +62,6 @@ a {
     background: #fff;
 }
 
-.section {
-    margin-inline: 20px;
+section {
+    margin: 20px;
 }
