@@ -1,8 +1,12 @@
 import React from 'react';
 import logo from '../../assets/images/logoBlack.png'
+import CountUpModule from 'react-countup';
+
 
 const About = () => {
     const text = "CREATIVITY & TECHNOLOGY";
+    const CountUp = CountUpModule.default;
+    console.log(CountUp)
     return (
         <section className='section-sm'>
             {/* top section */}
@@ -39,9 +43,11 @@ const About = () => {
 
             {/* bottom section */}
             <div>
-                <div>
-                    <span>225</span>
-                </div>
+                <CountUp
+                    end={160527}
+                    duration={2.5}
+                    separator=","
+                />
             </div>
         </section>
     );
