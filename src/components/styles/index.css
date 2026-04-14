@@ -1,6 +1,15 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
+:root {
+    /* fonts */
+    --font-dark: #0A0A0A;
+    --font-dark-2: #666666;
+    --font-dark-3: #999999;
+    --font-light: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,12 +20,8 @@ html {
     scroll-behavior: smooth;
 }
 
-:root {
-    /* fonts */
-    --font-dark: #0A0A0A;
-    --font-dark-2: #666666;
-    --font-dark-3: #999999;
-    --font-light: #fff;
+body {
+    font-family: "Inter", sans-serif;
 }
 
 .dark-font {
@@ -29,6 +34,14 @@ html {
 
 .dark-font-3 {
     color: var(--font-dark-3);
+}
+
+.funnel-font {
+    font-family: "Funnel Display", sans-serif;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
 }
 
 /* GLOBAL */
@@ -62,6 +75,11 @@ a {
     background: #fff;
 }
 
-section {
+section, .section {
     margin: 20px;
+}
+
+.section-sm {
+    padding-inline: 50px;
+    margin: auto;
 }

@@ -7,7 +7,7 @@ import { FaFacebookF, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer section">
             <div className="footer-box">
                 {/* -- Top Title -- */}
                 <div className="footer-heading">
