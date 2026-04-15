@@ -7,13 +7,8 @@
     --font-dark: #0A0A0A;
     --font-dark-2: #666666;
     --font-dark-3: #999999;
+    --font-dark-4: rgba(153, 153, 153, 0.25);
     --font-light: #fff;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 html {
@@ -22,6 +17,7 @@ html {
 
 body {
     font-family: "Inter", sans-serif;
+    background: #F5F5F5;
 }
 
 .dark-font {
@@ -35,6 +31,9 @@ body {
 .dark-font-3 {
     color: var(--font-dark-3);
 }
+.dark-font-4 {
+    color: var(--font-dark-4);
+}
 
 .funnel-font {
     font-family: "Funnel Display", sans-serif;
@@ -42,6 +41,11 @@ body {
 
 .inter-font {
     font-family: "Inter", sans-serif;
+}
+
+.divider {
+    border-top: 1px solid var(--font-dark-4);
+    margin-block: 20px;
 }
 
 /* GLOBAL */

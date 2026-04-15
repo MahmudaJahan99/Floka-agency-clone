@@ -61,6 +61,18 @@
   }
 }
 
+.user-img-container {
+  display: flex;
+}
+
+.user-img-container img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--font-light);
+  margin-left: -5px;
+}
+
 /* RESPONSIVE DESIGN */
 /* Tablet */
 @media (min-width: 768px) {
