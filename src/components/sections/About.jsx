@@ -47,8 +47,7 @@ const About = () => {
             {/* Middle section */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                 {/* Reviews */}
-                <div className='p-5 bg-white rounded-[20px] order-1 
-        lg:col-span-1'>
+                <div className='p-5 bg-white rounded-[20px] order-1 lg:col-span-1 flex flex-col'>
                     <p className='text-7xl dark-font'>
                         <span>
                             <CountUp
@@ -66,7 +65,7 @@ const About = () => {
 
                     <p className='dark-font-2'>Explore how we transform ideas into extraordinary digital experiences.</p>
 
-                    <div>
+                    <div className='mt-auto'>
                         <div className='user-img-container'>
                             <img src={user1} alt="User" />
                             <img src={user2} alt="User" />
@@ -85,12 +84,11 @@ const About = () => {
                 </div>
 
                 {/* Follow */}
-                <div className='order-2 lg:order-3
-        lg:col-span-1 grid gap-5'>
-                    <div className='p-5 bg-white rounded-[20px]'>
+                <div className='order-2 lg:order-3 lg:col-span-1 grid gap-5'>
+                    <div className='p-5 bg-white rounded-[20px] flex flex-col'>
                         <p className='dark-font-2'>Follow us</p>
                         <p className='dark-font-3'>Check all the latest updates about us</p>
-                        <div className='about-socials-btn-container'>
+                        <div className='about-socials-btn-container mt-auto'>
                             <a href=''>DRIBBLE</a>
                             <a href=''>BEHANCE</a>
                             <a href=''>LINKEDIN</a>
@@ -98,9 +96,9 @@ const About = () => {
                             <a href=''>XING</a>
                         </div>
                     </div>
-                    <div className='p-5 bg-white rounded-[20px]'>
-                        <p className='dark-font-2'>Impresssions</p>
-                        <div className='flex flex-col'>
+                    <div className='p-5 bg-white rounded-[20px] flex flex-col'>
+                        <p className='dark-font-2 mb-1'>Impresssions</p>
+                        <div className='flex flex-col mt-auto'>
                             <div className='bg-gray-300 px-5 py-1.25 rounded-2xl w-full'>
                                 <span>Solutions</span>
                                 <span>100%</span>
@@ -118,10 +116,7 @@ const About = () => {
                 </div>
 
                 {/* CEO */}
-                <div className='p-5 bg-[#0a0a0a] rounded-[20px] relative min-h-100 order-3 
-        md:col-span-2 
-        lg:col-span-2 
-        lg:order-2'>
+                <div className='p-5 bg-[#0a0a0a] rounded-[20px] relative min-h-100 order-3 md:col-span-2 lg:col-span-2 lg:order-2'>
                     <img src="https://floka.casethemes.net/wp-content/uploads/2025/05/home-1-icon1.svg" alt="Awards" className='w-20 absolute right-6.25' />
                     <img src="https://floka.casethemes.net/wp-content/uploads/2025/05/home-1-icon2.svg" alt="Awards" className='w-20 absolute right-6.25 top-18' />
                     <div className='ceo-img-container bottom-0 inline-block'>
@@ -134,6 +129,47 @@ const About = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Bottom Section */}
+            <div className="relative overflow-hidden w-full py-6 bg-white">
+
+  {/* LEFT FADE */}
+  <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
+
+  {/* RIGHT FADE */}
+  <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
+
+  {/* SCROLLING TRACK */}
+  <div className="flex w-max animate-marquee">
+    
+    {/* GROUP 1 */}
+    <div className="flex">
+      <span className="mx-1 whitespace-nowrap">
+        🚀 Continuous scrolling text looks smooth and clean
+      </span>
+      <span className="mx-1 whitespace-nowrap">
+        🚀 Continuous scrolling text looks smooth and clean
+      </span>
+      <span className="mx-1 whitespace-nowrap">
+        🚀 Continuous scrolling text looks smooth and clean
+      </span>
+    </div>
+
+    {/* GROUP 2 (duplicate) */}
+    <div className="flex">
+      <span className="mx-1 whitespace-nowrap">
+        🚀 Continuous scrolling text looks smooth and clean
+      </span>
+      <span className="mx-1 whitespace-nowrap">
+        🚀 Continuous scrolling text looks smooth and clean
+      </span>
+      <span className="mx-1 whitespace-nowrap">
+        🚀 Continuous scrolling text looks smooth and clean
+      </span>
+    </div>
+
+  </div>
+</div>
 
         </section>
     );
