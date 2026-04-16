@@ -9,8 +9,8 @@ const Hero = () => {
             </div>
 
 
-            <span className='brand-text-hero text-3xl md:text-5xl lg:text-9xl'>Floka</span>
-            <span className='studio-hero text-2xl md:text-4xl lg:text-7xl'>Studio</span>
+            <span className='brand-text-hero text-3xl md:text-5xl lg:text-9xl funnel-font'>Floka</span>
+            <span className='studio-hero text-2xl md:text-4xl lg:text-7xl funnel-font'>Studio</span>
         </section>
 
     );

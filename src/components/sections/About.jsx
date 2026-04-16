@@ -18,7 +18,7 @@ const About = () => {
             <div className='grid gap-10 md:grid-cols-5 my-5'>
                 <div className='md:col-span-2 flex flex-col gap-5'>
                     <div className="logo-circling-container">
-                        <div className="circle">
+                        <div className="circle inter-font">
                             {text.split("").map((char, i) => (
                                 <span
                                     key={i}
@@ -35,7 +35,7 @@ const About = () => {
                             src={logo}
                         />
                     </div>
-                    <p className='dark-font-2 font-medium text-lg'>We design every project with long-term success in mind.</p>
+                    <p className='dark-font-2 font-bold text-lg inter-font'>We design every project with long-term success in mind.</p>
                 </div>
                 <div className='md:col-span-3 flex items-center'>
                     <p className='dark-font font-medium text-2xl md:text-4xl funnel-font'>
@@ -131,45 +131,45 @@ const About = () => {
             </div>
 
             {/* Bottom Section */}
-            <div className="relative overflow-hidden w-full py-6 bg-white">
+            <div className="relative overflow-hidden w-full py-6 my-5">
 
-  {/* LEFT FADE */}
-  <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
+                {/* LEFT FADE */}
+                <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-linear-to-r from-[#F5F5F5] to-transparent z-10"></div>
 
-  {/* RIGHT FADE */}
-  <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
+                {/* RIGHT FADE */}
+                <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-linear-to-l from-[#F5F5F5] to-transparent z-10"></div>
 
-  {/* SCROLLING TRACK */}
-  <div className="flex w-max animate-marquee">
-    
-    {/* GROUP 1 */}
-    <div className="flex">
-      <span className="mx-1 whitespace-nowrap">
-        🚀 Continuous scrolling text looks smooth and clean
-      </span>
-      <span className="mx-1 whitespace-nowrap">
-        🚀 Continuous scrolling text looks smooth and clean
-      </span>
-      <span className="mx-1 whitespace-nowrap">
-        🚀 Continuous scrolling text looks smooth and clean
-      </span>
-    </div>
+                {/* SCROLLING TRACK */}
+                <div className="flex w-max animate-marquee">
 
-    {/* GROUP 2 (duplicate) */}
-    <div className="flex">
-      <span className="mx-1 whitespace-nowrap">
-        🚀 Continuous scrolling text looks smooth and clean
-      </span>
-      <span className="mx-1 whitespace-nowrap">
-        🚀 Continuous scrolling text looks smooth and clean
-      </span>
-      <span className="mx-1 whitespace-nowrap">
-        🚀 Continuous scrolling text looks smooth and clean
-      </span>
-    </div>
+                    {/* GROUP 1 */}
+                    <div className="flex">
+                        <span className="mx-1 whitespace-nowrap text-3xl md:text-4xl lg:text-5xl">
+                            See how our team combines creativity, technology, and strategy
+                        </span>
+                        <span className="mx-1 whitespace-nowrap  text-3xl md:text-4xl lg:text-5xl">
+                            See how our team combines creativity, technology, and strategy
+                        </span>
+                        <span className="mx-1 whitespace-nowrap  text-3xl md:text-4xl lg:text-5xl">
+                            See how our team combines creativity, technology, and strategy
+                        </span>
+                    </div>
 
-  </div>
-</div>
+                    {/* GROUP 2 (duplicate) */}
+                    <div className="flex">
+                        <span className="mx-1 whitespace-nowrap  text-3xl md:text-4xl lg:text-5xl">
+                            See how our team combines creativity, technology, and strategy
+                        </span>
+                        <span className="mx-1 whitespace-nowrap  text-3xl md:text-4xl lg:text-5xl">
+                            See how our team combines creativity, technology, and strategy
+                        </span>
+                        <span className="mx-1 whitespace-nowrap  text-3xl md:text-4xl lg:text-5xl">
+                            See how our team combines creativity, technology, and strategy
+                        </span>
+                    </div>
+
+                </div>
+            </div>
 
         </section>
     );

@@ -21,7 +21,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="navbar dark-font">
+            <nav className="navbar dark-font inter-font">
                 <div className="nav-container">
                     {/* Logo */}
                     <div className="logo">
