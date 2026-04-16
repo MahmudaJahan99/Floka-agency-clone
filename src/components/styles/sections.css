@@ -76,6 +76,7 @@
 .about-socials-btn-container {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .about-socials-btn-container a {
@@ -94,7 +95,6 @@
   position: relative;
   display: inline-block;
   overflow: hidden;
-  margin-bottom: -50px;
 }
 
 .ceo-img-container img {

@@ -15,7 +15,7 @@ const About = () => {
     return (
         <section className='section-sm'>
             {/* top section */}
-            <div className='grid gap-10 md:grid-cols-5'>
+            <div className='grid gap-10 md:grid-cols-5 my-5'>
                 <div className='md:col-span-2 flex flex-col gap-5'>
                     <div className="logo-circling-container">
                         <div className="circle">
@@ -38,18 +38,17 @@ const About = () => {
                     <p className='dark-font-2 font-medium text-lg'>We design every project with long-term success in mind.</p>
                 </div>
                 <div className='md:col-span-3 flex items-center'>
-                    <p className='dark-font font-medium text-4xl funnel-font'>
+                    <p className='dark-font font-medium text-2xl md:text-4xl funnel-font'>
                         Our approach is straightforward — prioritizing functionality, speed, and clarity for solutions.
                     </p>
                 </div>
-
-
             </div>
 
             {/* Middle section */}
-            <div>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                 {/* Reviews */}
-                <div className='p-5 bg-white rounded-[20px]'>
+                <div className='p-5 bg-white rounded-[20px] order-1 
+        lg:col-span-1'>
                     <p className='text-7xl dark-font'>
                         <span>
                             <CountUp
@@ -86,7 +85,8 @@ const About = () => {
                 </div>
 
                 {/* Follow */}
-                <div>
+                <div className='order-2 lg:order-3
+        lg:col-span-1 grid gap-5'>
                     <div className='p-5 bg-white rounded-[20px]'>
                         <p className='dark-font-2'>Follow us</p>
                         <p className='dark-font-3'>Check all the latest updates about us</p>
@@ -118,18 +118,20 @@ const About = () => {
                 </div>
 
                 {/* CEO */}
-                <div className='p-5 bg-[#0a0a0a] rounded-[20px] relative'>
+                <div className='p-5 bg-[#0a0a0a] rounded-[20px] relative min-h-100 order-3 
+        md:col-span-2 
+        lg:col-span-2 
+        lg:order-2'>
                     <img src="https://floka.casethemes.net/wp-content/uploads/2025/05/home-1-icon1.svg" alt="Awards" className='w-20 absolute right-6.25' />
                     <img src="https://floka.casethemes.net/wp-content/uploads/2025/05/home-1-icon2.svg" alt="Awards" className='w-20 absolute right-6.25 top-18' />
-                    <div className='ceo-img-container relative -top-10 inline-block'>
+                    <div className='ceo-img-container bottom-0 inline-block'>
                         <img src={ceoImage} alt="Awards" className='w-1/2' />
                     </div>
 
                     <div className='absolute bottom-12 px-5'>
-                        <p className='text-white text-2xl'>"At Floka, we merge strategy, creaivity, and technology to shape brands that people love."</p>
-                        <p className='text-lg dark-font-3'>Maria J. Keys / CEO</p>
+                        <p className='text-white text-lg md:text-2xl'>"At Floka, we merge strategy, creaivity, and technology to shape brands that people love."</p>
+                        <p className='md:text-lg dark-font-3'>Maria J. Keys / CEO</p>
                     </div>
-
                 </div>
             </div>
 
