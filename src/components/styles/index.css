@@ -29,6 +29,7 @@ body {
 .dark-font-3 {
     color: var(--font-dark-3);
 }
+
 .dark-font-4 {
     color: var(--font-dark-4);
 }
@@ -51,7 +52,9 @@ h2 {
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 20px;
+    color: var(--font-dark);
 }
+
 a {
     text-decoration: none;
 }
@@ -82,11 +85,17 @@ a {
     background: #fff;
 }
 
-section, .section {
+section,
+.section {
     margin: 20px;
+    margin-block: 40px;
 }
 
-.section-sm {
-    padding-inline: 50px;
-    margin: auto;
+/********** RESPONSIVE DESIGN **********/
+/* Tablet */
+@media (min-width: 768px) {
+    .section-sm {
+        padding-inline: 50px;
+        margin: auto;
+    }
 }
