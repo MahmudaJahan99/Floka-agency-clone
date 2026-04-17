@@ -9,7 +9,7 @@ const Hero = () => {
             </div>
 
 
-            <span className='brand-text-hero text-3xl md:text-5xl lg:text-9xl funnel-font'>Floka</span>
+            <h1 className='brand-text-hero text-3xl md:text-5xl lg:text-9xl funnel-font'>Floka</h1>
             <span className='studio-hero text-2xl md:text-4xl lg:text-7xl funnel-font'>Studio</span>
         </section>
 

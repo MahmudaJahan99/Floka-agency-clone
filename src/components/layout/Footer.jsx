@@ -37,7 +37,7 @@ const Footer = () => {
                     {/* Links */}
                     <div className="footer-links nav-links flex flex-col gap-5 text-center lg:justify-self-center">
                         <span><a href="#">Home</a></span>
-                        <span><a href="#">About</a></span>
+                        <span><a href="#about">About</a></span>
                         <span><a href="#">Services</a></span>
                         <span><a href="#">Portfolio</a></span>
                         <span><a href="#">Contact</a></span>

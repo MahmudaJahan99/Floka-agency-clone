@@ -31,7 +31,7 @@ const Navbar = () => {
                     {/* Links */}
                     <div className="nav-links">
                         <a href="#">Home</a>
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                         <a href="#">Services</a>
                         <a href="#">Contact</a>
                     </div>
@@ -45,7 +45,7 @@ const Navbar = () => {
                 {/* Mobile Menu */}
                 <div className={`mobile-menu dark-font ${isOpen ? 'active' : ''}`}>
                     <a href="#" onClick={closeMenu}>Home</a>
-                    <a href="#" onClick={closeMenu}>About</a>
+                    <a href="#about" onClick={closeMenu}>About</a>
                     <a href="#" onClick={closeMenu}>Services</a>
                     <a href="#" onClick={closeMenu}>Contact</a>
                 </div>

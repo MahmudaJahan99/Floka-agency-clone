@@ -9,17 +9,24 @@ import ceoImage from '../../assets/images/home1-author-img1.webp'
 
 
 const About = () => {
-    const text = "CREATIVITY & TECHNOLOGY";
+    const circleText = "CREATIVITY & TECHNOLOGY";
+    const marqueeText = ["See how our team combines creativity, technology, and strategy"]
+
     const CountUp = CountUpModule.default;
-    console.log(CountUp)
+
     return (
-        <section className='section-sm'>
+        <section id='about' className='section-sm'>
+
+            <h2 className='-mb-2.5'>ABOUT US</h2>
+
+            <div className="divider"></div>
+
             {/* top section */}
             <div className='grid gap-10 md:grid-cols-5 my-5'>
                 <div className='md:col-span-2 flex flex-col gap-5'>
                     <div className="logo-circling-container">
                         <div className="circle inter-font">
-                            {text.split("").map((char, i) => (
+                            {circleText.split("").map((char, i) => (
                                 <span
                                     key={i}
                                     className="rotating-text"
@@ -47,7 +54,7 @@ const About = () => {
             {/* Middle section */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                 {/* Reviews */}
-                <div className='p-5 bg-white rounded-[20px] order-1 lg:col-span-1 flex flex-col'>
+                <div className='p-5 bg-white rounded-[20px] order-1 lg:col-span-1 flex flex-col inter-font'>
                     <p className='text-7xl dark-font'>
                         <span>
                             <CountUp
@@ -63,7 +70,7 @@ const About = () => {
 
                     <div className='divider'></div>
 
-                    <p className='dark-font-2'>Explore how we transform ideas into extraordinary digital experiences.</p>
+                    <p className='dark-font-2 text-lg mb-5'>Explore how we transform ideas into extraordinary digital experiences.</p>
 
                     <div className='mt-auto'>
                         <div className='user-img-container'>
@@ -72,7 +79,7 @@ const About = () => {
                             <img src={user3} alt="User" />
                             <img src={user4} alt="User" />
                         </div>
-                        <p>
+                        <p className='dark-font-3'>
                             <CountUp
                                 start={0}
                                 end={1200}
@@ -84,21 +91,21 @@ const About = () => {
                 </div>
 
                 {/* Follow */}
-                <div className='order-2 lg:order-3 lg:col-span-1 grid gap-5'>
+                <div className='order-2 lg:order-3 lg:col-span-1 grid gap-5  inter-font'>
                     <div className='p-5 bg-white rounded-[20px] flex flex-col'>
-                        <p className='dark-font-2'>Follow us</p>
-                        <p className='dark-font-3'>Check all the latest updates about us</p>
+                        <h3 className='dark-font-2 text-xl font-semibold'>Follow us</h3>
+                        <p className='dark-font-3 mb-5'>Check all the latest updates about us</p>
                         <div className='about-socials-btn-container mt-auto'>
-                            <a href=''>DRIBBLE</a>
-                            <a href=''>BEHANCE</a>
-                            <a href=''>LINKEDIN</a>
-                            <a href=''>X</a>
-                            <a href=''>XING</a>
+                            <a href='https://dribbble.com/'>DRIBBLE</a>
+                            <a href='https://www.behance.net/'>BEHANCE</a>
+                            <a href='https://www.linkedin.com/'>LINKEDIN</a>
+                            <a href='https://x.com/'>X</a>
+                            <a href='https://www.xing.com/en'>XING</a>
                         </div>
                     </div>
                     <div className='p-5 bg-white rounded-[20px] flex flex-col'>
-                        <p className='dark-font-2 mb-1'>Impresssions</p>
-                        <div className='flex flex-col mt-auto'>
+                        <h3 className='dark-font-2 text-xl font-semibold mb-5'>Impresssions</h3>
+                        <div className='flex flex-col mt-auto dark-font-2 font-medium'>
                             <div className='bg-gray-300 px-5 py-1.25 rounded-2xl w-full'>
                                 <span>Solutions</span>
                                 <span>100%</span>
@@ -124,14 +131,14 @@ const About = () => {
                     </div>
 
                     <div className='absolute bottom-12 px-5'>
-                        <p className='text-white text-lg md:text-2xl'>"At Floka, we merge strategy, creaivity, and technology to shape brands that people love."</p>
-                        <p className='md:text-lg dark-font-3'>Maria J. Keys / CEO</p>
+                        <p className='text-white text-xl md:text-2xl funnel-font'>"At Floka, we merge strategy, creaivity, and technology to shape brands that people love."</p>
+                        <p className='md:text-lg dark-font-3 inter-font'>Maria J. Keys / CEO</p>
                     </div>
                 </div>
             </div>
 
             {/* Bottom Section */}
-            <div className="relative overflow-hidden w-full py-6 my-5">
+            <div className="relative overflow-hidden w-full py-6 my-5 funnel-font">
 
                 {/* LEFT FADE */}
                 <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-linear-to-r from-[#F5F5F5] to-transparent z-10"></div>
@@ -142,31 +149,15 @@ const About = () => {
                 {/* SCROLLING TRACK */}
                 <div className="flex w-max animate-marquee">
 
-                    {/* GROUP 1 */}
-                    <div className="flex">
-                        <span className="mx-1 whitespace-nowrap text-3xl md:text-4xl lg:text-5xl">
-                            See how our team combines creativity, technology, and strategy
+                    {/* Text content */}
+                    {[...marqueeText, ...marqueeText].map((text, i) => (
+                        <span
+                            key={i}
+                            className="mx-5 whitespace-nowrap text-4xl md:text-5xl lg:text-6xl"
+                        >
+                            {text}
                         </span>
-                        <span className="mx-1 whitespace-nowrap  text-3xl md:text-4xl lg:text-5xl">
-                            See how our team combines creativity, technology, and strategy
-                        </span>
-                        <span className="mx-1 whitespace-nowrap  text-3xl md:text-4xl lg:text-5xl">
-                            See how our team combines creativity, technology, and strategy
-                        </span>
-                    </div>
-
-                    {/* GROUP 2 (duplicate) */}
-                    <div className="flex">
-                        <span className="mx-1 whitespace-nowrap  text-3xl md:text-4xl lg:text-5xl">
-                            See how our team combines creativity, technology, and strategy
-                        </span>
-                        <span className="mx-1 whitespace-nowrap  text-3xl md:text-4xl lg:text-5xl">
-                            See how our team combines creativity, technology, and strategy
-                        </span>
-                        <span className="mx-1 whitespace-nowrap  text-3xl md:text-4xl lg:text-5xl">
-                            See how our team combines creativity, technology, and strategy
-                        </span>
-                    </div>
+                    ))}
 
                 </div>
             </div>
