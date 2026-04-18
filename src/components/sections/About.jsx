@@ -95,12 +95,12 @@ const About = () => {
                     <div className='p-5 bg-white rounded-[20px] flex flex-col'>
                         <h3 className='dark-font-2 text-xl font-semibold'>Follow us</h3>
                         <p className='dark-font-3 mb-5'>Check all the latest updates about us</p>
-                        <div className='about-socials-btn-container mt-auto'>
-                            <a href='https://dribbble.com/'>DRIBBLE</a>
-                            <a href='https://www.behance.net/'>BEHANCE</a>
-                            <a href='https://www.linkedin.com/'>LINKEDIN</a>
-                            <a href='https://x.com/'>X</a>
-                            <a href='https://www.xing.com/en'>XING</a>
+                        <div className='capsule-btns-container mt-auto'>
+                            <a href='https://dribbble.com/' className='capsule-btn'>DRIBBLE</a>
+                            <a href='https://www.behance.net/' className='capsule-btn'>BEHANCE</a>
+                            <a href='https://www.linkedin.com/' className='capsule-btn'>LINKEDIN</a>
+                            <a href='https://x.com/' className='capsule-btn'>X</a>
+                            <a href='https://www.xing.com/en' className='capsule-btn'>XING</a>
                         </div>
                     </div>
                     <div className='p-5 bg-white rounded-[20px] flex flex-col'>

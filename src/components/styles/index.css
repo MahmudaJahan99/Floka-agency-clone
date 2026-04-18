@@ -47,6 +47,20 @@ body {
     margin-block: 20px;
 }
 
+.capsule-btns-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.capsule-btn {
+    border: 1px solid var(--font-dark-4);
+    color: var(--font-dark-2);
+    font-size: 12px;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
 /* GLOBAL */
 h2 {
     font-family: "Inter", sans-serif;
