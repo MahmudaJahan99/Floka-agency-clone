@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className="section">
             <div className="footer-box">
                 {/* -- Top Title -- */}
-                <div className="footer-heading">
+                <div className="footer-heading gradient-overlay">
                     <p>
                         Let's
                         <br></br>

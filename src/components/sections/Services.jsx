@@ -8,7 +8,7 @@ const Services = () => {
     return (
         <section className='section-sm inter-font'>
             <div className="services-box">
-                <h3 className='services-heading'>
+                <h3 className='services-heading gradient-overlay'>
                     Company
                     <br />
                     Expertise

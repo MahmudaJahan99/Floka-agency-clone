@@ -1,19 +1,19 @@
 /********** HERO SECTION **********/
 .brand-text-hero {
-    font-weight: 600;
-    color: var(--font-light);
-    position: absolute;
-    bottom: 40px;
-    left: 25px;
+  font-weight: 600;
+  color: var(--font-light);
+  position: absolute;
+  bottom: 40px;
+  left: 25px;
 }
 
 .studio-hero {
-    font-weight: 500;
-    color: var(--font-dark-3);
-    opacity: 0.7;
-    position: absolute;
-    bottom: 20px;
-    left: 35px;
+  font-weight: 500;
+  color: var(--font-dark-3);
+  opacity: 0.7;
+  position: absolute;
+  bottom: 20px;
+  left: 35px;
 }
 
 /********** ABOUT SECTION **********/
@@ -54,6 +54,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -63,7 +64,7 @@
   display: flex;
 }
 
-.user-img-container img{
+.user-img-container img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -91,13 +92,12 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(10, 10, 10, 1) 0%,   /* match your bg color */
-    rgba(10, 10, 10, 0.6) 30%,
-    rgba(10, 10, 10, 0.2) 60%,
-    transparent 100%
-  );
+  background: linear-gradient(to top,
+      rgba(10, 10, 10, 1) 0%,
+      /* match your bg color */
+      rgba(10, 10, 10, 0.6) 30%,
+      rgba(10, 10, 10, 0.2) 60%,
+      transparent 100%);
   pointer-events: none;
 }
 
@@ -106,6 +106,7 @@
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -117,24 +118,18 @@
   animation: marquee 15s linear infinite;
 }
 
-/* Services */
+/********** SERVICES SECTION **********/
 .services-box {
-    background: var(--font-dark);
-    padding: 20px;
-    border-radius: 20px;
-    color: var(--font-light);
+  background: var(--font-dark);
+  padding: 20px;
+  border-radius: 20px;
+  color: var(--font-light);
 }
 
 .services-heading {
-    font-size: 3rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 30px;
-    line-height: 0.8;
-    background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0.1));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 0.8;
 }
 
 details {
@@ -142,32 +137,55 @@ details {
   border-radius: 0;
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+/********** SERVICES 2 SECTION **********/
+
+.projects-imgs-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-imgs-container img {
+  position: absolute;
+  border-radius: 10px;
+  width: 70px;
+  transition: 0.3s;
+}
+
+.projects-imgs-container img:nth-child(1) {
+  transform: rotate(-15deg) translateX(-60px) translateY(-5px);
+}
+
+.projects-imgs-container img:nth-child(2) {
+  transform: rotate(0deg);
+}
+
+.projects-imgs-container img:nth-child(3) {
+  transform: rotate(15deg) translateX(60px) translateY(-5px);
 }
 
 /* RESPONSIVE DESIGN */
 /* Tablet */
 @media (min-width: 768px) {
-    /* Hero section */
-    .brand-text-hero {
-        bottom: 80px;
-        left: 50px;
-    }
 
-    .studio-hero {
-        bottom: 40px;
-        left: 70px;
-    }
+  /* Hero section */
+  .brand-text-hero {
+    bottom: 80px;
+    left: 50px;
+  }
+
+  .studio-hero {
+    bottom: 40px;
+    left: 70px;
+  }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
-    /* Hero section */
-    .studio-hero {
-        bottom: 20px;
-        left: 180px;
-    }
+
+  /* Hero section */
+  .studio-hero {
+    bottom: 20px;
+    left: 180px;
+  }
 }

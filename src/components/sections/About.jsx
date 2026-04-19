@@ -45,7 +45,7 @@ const About = () => {
                     <p className='dark-font-2 font-bold text-lg inter-font'>We design every project with long-term success in mind.</p>
                 </div>
                 <div className='md:col-span-3 flex items-center'>
-                    <p className='dark-font font-medium text-2xl md:text-4xl funnel-font'>
+                    <p className='big-font md:text-4xl'>
                         Our approach is straightforward — prioritizing functionality, speed, and clarity for solutions.
                     </p>
                 </div>
@@ -54,7 +54,7 @@ const About = () => {
             {/* Middle section */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                 {/* Reviews */}
-                <div className='p-5 bg-white rounded-[20px] order-1 lg:col-span-1 flex flex-col inter-font'>
+                <div className='white-card order-1 lg:col-span-1 flex flex-col'>
                     <p className='text-7xl dark-font'>
                         <span>
                             <CountUp
@@ -91,8 +91,8 @@ const About = () => {
                 </div>
 
                 {/* Follow */}
-                <div className='order-2 lg:order-3 lg:col-span-1 grid gap-5  inter-font'>
-                    <div className='p-5 bg-white rounded-[20px] flex flex-col'>
+                <div className='order-2 lg:order-3 lg:col-span-1 grid gap-5'>
+                    <div className='white-card flex flex-col'>
                         <h3 className='dark-font-2 text-xl font-semibold'>Follow us</h3>
                         <p className='dark-font-3 mb-5'>Check all the latest updates about us</p>
                         <div className='capsule-btns-container mt-auto'>
@@ -103,7 +103,7 @@ const About = () => {
                             <a href='https://www.xing.com/en' className='capsule-btn'>XING</a>
                         </div>
                     </div>
-                    <div className='p-5 bg-white rounded-[20px] flex flex-col'>
+                    <div className='white-card flex flex-col'>
                         <h3 className='dark-font-2 text-xl font-semibold mb-5'>Impresssions</h3>
                         <div className='flex flex-col mt-auto dark-font-2 font-medium'>
                             <div className='bg-gray-300 px-5 py-1.25 rounded-2xl w-full'>
@@ -123,14 +123,14 @@ const About = () => {
                 </div>
 
                 {/* CEO */}
-                <div className='p-5 bg-[#0a0a0a] rounded-[20px] relative min-h-100 order-3 md:col-span-2 lg:col-span-2 lg:order-2'>
+                <div className='black-card relative min-h-100 order-3 md:col-span-2 lg:col-span-2 lg:order-2'>
                     <img src="https://floka.casethemes.net/wp-content/uploads/2025/05/home-1-icon1.svg" alt="Awards" className='w-20 absolute right-6.25' />
                     <img src="https://floka.casethemes.net/wp-content/uploads/2025/05/home-1-icon2.svg" alt="Awards" className='w-20 absolute right-6.25 top-18' />
                     <div className='ceo-img-container bottom-0 inline-block'>
                         <img src={ceoImage} alt="Awards" className='w-1/2' />
                     </div>
 
-                    <div className='absolute bottom-12 px-5'>
+                    <div className='absolute bottom-12 px-5 '>
                         <p className='text-white text-xl md:text-2xl funnel-font'>"At Floka, we merge strategy, creaivity, and technology to shape brands that people love."</p>
                         <p className='md:text-lg dark-font-3 inter-font'>Maria J. Keys / CEO</p>
                     </div>
