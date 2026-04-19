@@ -1,8 +1,8 @@
 import React from 'react';
-import uiImage from '../../assets/images/home1-accordion-img1-300x250.webp'
-import webDev from '../../assets/images/home1-bg-img1-300x250.webp'
-import seo from '../../assets/images/home1-bg-img2-300x250.webp'
-import lowCost from '../../assets/images/home1-bg-img3-300x250.webp'
+import uiImage from '../../assets/images/accordion-img1.webp'
+import webDev from '../../assets/images/accordion-img2.webp'
+import seo from '../../assets/images/accordion-img3.webp'
+import lowCode from '../../assets/images/accordion-img4.webp'
 
 const Services = () => {
     return (
@@ -15,7 +15,7 @@ const Services = () => {
                 </h3>
 
                 {/* Accordion Item 1 */}
-                <details className="collapse collapse-plus border border-base-300" name="my-accordion-det-1" open>
+                <details className="collapse collapse-plus" name="my-accordion-det-1" open>
                     <summary className="collapse-title font-semibold text-xl">User Interface & Experience Design</summary>
                     <div className="collapse-content text-sm">
                         <div className='md:grid md:grid-cols-3 gap-5'>
@@ -34,7 +34,7 @@ const Services = () => {
                 </details>
 
                 {/* Accordion Item 2 */}
-                <details className="collapse collapse-plus border border-base-300" name="my-accordion-det-1">
+                <details className="collapse collapse-plus" name="my-accordion-det-1">
                     <summary className="collapse-title font-semibold text-xl">Web Development</summary>
                     <div className="collapse-content text-sm">
                         <div className='md:grid md:grid-cols-3 gap-5'>
@@ -53,7 +53,7 @@ const Services = () => {
                 </details>
 
                 {/* Accordion Item 3 */}
-                <details className="collapse collapse-plus border border-base-300" name="my-accordion-det-1">
+                <details className="collapse collapse-plus" name="my-accordion-det-1">
                     <summary className="collapse-title font-semibold text-xl">Search Engine Optimization</summary>
                     <div className="collapse-content text-sm">
                         <div className='md:grid md:grid-cols-3 gap-5'>
@@ -72,7 +72,7 @@ const Services = () => {
                 </details>
 
                 {/* Accordion Item 4 */}
-                <details className="collapse collapse-plus border border-base-300" name="my-accordion-det-1">
+                <details className="collapse collapse-plus border-b border-[#99999940]" name="my-accordion-det-1">
                     <summary className="collapse-title font-semibold text-xl">Low-Code Development</summary>
                     <div className="collapse-content text-sm">
                         <div className='md:grid md:grid-cols-3 gap-5'>
@@ -85,7 +85,7 @@ const Services = () => {
                                     <span className='capsule-btn'>RAPID DEVELOPMENT</span>
                                 </div>
                             </div>
-                            <div className='flex items-center justify-center mt-5'><img src={lowCost} className='rounded-[20px]' /></div>
+                            <div className='flex items-center justify-center mt-5'><img src={lowCode} className='rounded-[20px]' /></div>
                         </div>
                     </div>
                 </details>

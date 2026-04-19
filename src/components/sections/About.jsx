@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from '../../assets/images/logoBlack.png'
 import CountUpModule from 'react-countup';
-import user1 from '../../assets/images/home1-counter-img1.webp'
-import user2 from '../../assets/images/home1-counter-img2.webp'
-import user3 from '../../assets/images/home1-counter-img3.webp'
-import user4 from '../../assets/images/home1-counter-img4.webp'
-import ceoImage from '../../assets/images/home1-author-img1.webp'
+import user1 from '../../assets/images/user-img1.webp'
+import user2 from '../../assets/images/user-img2.webp'
+import user3 from '../../assets/images/user-img3.webp'
+import user4 from '../../assets/images/user-img4.webp'
+import ceoImage from '../../assets/images/ceo-img.webp'
 
 
 const About = () => {

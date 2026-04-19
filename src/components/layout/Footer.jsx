@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/footer.css'
-import footerHero from '../../assets/images/home1-bg-img14-645x500.jpg'
+import footerHero from '../../assets/images/footer-models.jpg'
 import logo from '../../assets/images/footer-logo.svg'
-import starBg from '../../assets/images/footer-icon-bg.png'
+import starBg from '../../assets/images/star-bg.png'
 import { FaFacebookF, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {

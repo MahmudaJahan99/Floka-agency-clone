@@ -137,6 +137,11 @@
     -webkit-text-fill-color: transparent;
 }
 
+details {
+  border-top: 1px solid var(--font-dark-4);
+  border-radius: 0;
+}
+
 .footer-content {
     display: flex;
     flex-direction: column;
