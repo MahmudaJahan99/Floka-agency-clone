@@ -84,6 +84,19 @@ body {
     border-radius: 50px;
 }
 
+/* ROUND BUTTONS */
+.round-btn {
+    color: var(--font-light);
+    background-color: var(--font-dark);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
 /* CARDS */
 .white-card {
     background: var(--font-light);

@@ -164,6 +164,30 @@ details {
   transform: rotate(15deg) translateX(60px) translateY(-5px);
 }
 
+.photo-card {
+  position: relative;
+  border-radius: 20px;
+  padding: 20px;
+  color: var(--font-light);
+  overflow: hidden;
+}
+
+.photo-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(https://floka.casethemes.net/wp-content/uploads/2025/05/home1-bg-img7.webp);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(30%);
+  z-index: 0;
+}
+
+.photo-card > * {
+  position: relative;
+  z-index: 1;
+}
+
 /* RESPONSIVE DESIGN */
 /* Tablet */
 @media (min-width: 768px) {
