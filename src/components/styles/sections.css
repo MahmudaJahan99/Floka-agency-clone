@@ -116,6 +116,7 @@
   display: flex;
   width: max-content;
   animation: marquee 15s linear infinite;
+  color: var(--font-dark);
 }
 
 /********** SERVICES SECTION **********/
@@ -148,7 +149,7 @@ details {
 .projects-imgs-container img {
   position: absolute;
   border-radius: 10px;
-  width: 70px;
+  width: 60px;
   transition: 0.3s;
 }
 
@@ -212,4 +213,9 @@ details {
     bottom: 20px;
     left: 180px;
   }
+
+  /********** SERVICES 2 SECTION **********/
+  .projects-imgs-container img {
+  width: 80px;
+}
 }

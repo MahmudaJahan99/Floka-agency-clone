@@ -151,8 +151,7 @@ a {
     background: #fff;
 }
 
-section,
-.section {
+section {
     margin: 20px;
     margin-block: 40px;
 }
@@ -162,6 +161,5 @@ section,
 @media (min-width: 768px) {
     .section-sm {
         padding-inline: 50px;
-        margin: auto;
     }
 }
