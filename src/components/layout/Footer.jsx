@@ -8,13 +8,13 @@ import { FaFacebookF, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
 const Footer = () => {
     return (
         <footer className="section">
-            <div className="footer-box">
+            <div className="black-card">
                 {/* -- Top Title -- */}
                 <div className="footer-heading gradient-overlay">
                     <p>
                         Let's
                         <br></br>
-                        connect
+                        Connect
                     </p>
                 </div>
 
@@ -31,10 +31,9 @@ const Footer = () => {
                         <div className='footer-logo-heading'>
                             <h3 className="brand-text">FLOKA</h3>
                         </div>
-
                     </div>
 
-                    {/* Links */}
+                    {/* Section 2 */}
                     <div className="footer-links nav-links flex flex-col gap-5 text-center lg:justify-self-center">
                         <span><a href="#">Home</a></span>
                         <span><a href="#about">About</a></span>
@@ -45,8 +44,8 @@ const Footer = () => {
 
                     {/* -- Section 3 -- */}
                     <div className="footer-col footer-info">
+                        <img src={starBg} />
 
-                        <img src={starBg} alt="" />
                         <p>
                             At <a href="#" className='text-white font-semibold'>Floka</a>, we believe furniture should be more than just functional—it should tell your story. With a focus on timeless design, sustainable materials, and expert craftsmanship, we create pieces that feel personal.
                         </p>
@@ -62,11 +61,10 @@ const Footer = () => {
                             <a href="#"><FaXTwitter /></a>
                             <a href="#"><FaLinkedinIn /></a>
                         </div>
-
                     </div>
-
                 </div>
             </div>
+
             {/* -- Copyright -- */}
             <p className="copyright">
                 © 2026 FLOKA. All rights reserved.

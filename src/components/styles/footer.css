@@ -1,11 +1,3 @@
-/* Base */
-.footer-box {
-    background: var(--font-dark);
-    padding: 20px;
-    border-radius: 20px;
-    color: var(--font-light);
-}
-
 /* Heading */
 .footer-heading {
     font-size: 3rem;
