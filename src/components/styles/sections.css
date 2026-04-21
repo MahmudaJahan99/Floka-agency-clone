@@ -119,26 +119,14 @@
 }
 
 /********** SERVICES SECTION **********/
-.services-box {
-  background: var(--font-dark);
-  padding: 20px;
-  border-radius: 20px;
-  color: var(--font-light);
-}
-
-.services-heading {
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 0.8;
-}
-
+/* Accordion */
 details {
   border-top: 1px solid var(--font-dark-4);
   border-radius: 0;
 }
 
-/********** SERVICES 2 SECTION **********/
-
+/* Cards */
+/* 2nd Black Card */
 .projects-imgs-container {
   position: relative;
   display: flex;
@@ -164,6 +152,7 @@ details {
   transform: rotate(15deg) translateX(60px) translateY(-5px);
 }
 
+/* 4th card with Overlayed Image */
 .photo-card {
   position: relative;
   border-radius: 20px;
@@ -188,11 +177,11 @@ details {
   z-index: 1;
 }
 
-/* RESPONSIVE DESIGN */
+/******************** RESPONSIVE DESIGN ********************/
 /* Tablet */
 @media (min-width: 768px) {
 
-  /* Hero section */
+/********** HERO SECTION **********/
   .brand-text-hero {
     bottom: 80px;
     left: 50px;
@@ -207,7 +196,7 @@ details {
 /* Desktop */
 @media (min-width: 1024px) {
 
-  /* Hero section */
+/********** HERO SECTION **********/
   .studio-hero {
     bottom: 20px;
     left: 180px;
