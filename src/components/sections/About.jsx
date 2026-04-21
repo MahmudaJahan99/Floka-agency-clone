@@ -17,15 +17,19 @@ const About = () => {
     return (
         <section id='about' className='section-sm'>
 
+            {/* Title */}
             <h2 className='-mb-2.5'>ABOUT US</h2>
 
+            {/* Divider */}
             <div className="divider"></div>
 
-            {/* top section */}
+            {/* Top section */}
             <div className='grid gap-10 md:grid-cols-5 my-5'>
+
                 <div className='md:col-span-2 flex flex-col gap-5'>
+                    {/* Round text circling logo */}
                     <div className="logo-circling-container">
-                        <div className="circle inter-font">
+                        <div className="circle">
                             {circleText.split("").map((char, i) => (
                                 <span
                                     key={i}
@@ -42,8 +46,10 @@ const About = () => {
                             src={logo}
                         />
                     </div>
+
                     <p className='dark-font-2 font-bold text-lg inter-font'>We design every project with long-term success in mind.</p>
                 </div>
+
                 <div className='md:col-span-3 flex items-center'>
                     <p className='big-font md:text-4xl'>
                         Our approach is straightforward — prioritizing functionality, speed, and clarity for solutions.
@@ -68,12 +74,14 @@ const About = () => {
 
                     <p className='dark-font-3'>Years of experience</p>
 
+                    {/* Divider */}
                     <div className='divider'></div>
 
                     <p className='dark-font-2 text-lg mb-5'>Explore how we transform ideas into extraordinary digital experiences.</p>
 
+                    {/* Users' images */}
                     <div className='mt-auto'>
-                        <div className='user-img-container'>
+                        <div className='user-img-container flex'>
                             <img src={user1} alt="User" />
                             <img src={user2} alt="User" />
                             <img src={user3} alt="User" />
@@ -90,8 +98,9 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* Follow */}
+                {/* Follow Us & Impressions */}
                 <div className='order-2 lg:order-3 lg:col-span-1 grid gap-5'>
+                    {/* Follow Us Card */}
                     <div className='white-card flex flex-col'>
                         <h3 className='dark-font-2 text-xl font-semibold'>Follow us</h3>
                         <p className='dark-font-3 mb-5'>Check all the latest updates about us</p>
@@ -103,8 +112,10 @@ const About = () => {
                             <a href='https://www.xing.com/en' className='capsule-btn'>XING</a>
                         </div>
                     </div>
+                    {/* Impressions Card */}
                     <div className='white-card flex flex-col'>
                         <h3 className='dark-font-2 text-xl font-semibold mb-5'>Impresssions</h3>
+
                         <div className='flex flex-col mt-auto dark-font-2 font-medium'>
                             <div className='bg-gray-300 px-5 py-1.25 rounded-2xl w-full'>
                                 <span>Solutions</span>
@@ -124,8 +135,11 @@ const About = () => {
 
                 {/* CEO */}
                 <div className='black-card relative min-h-100 order-3 md:col-span-2 lg:col-span-2 lg:order-2'>
+                    {/* Awards at top-right */}
                     <img src="https://floka.casethemes.net/wp-content/uploads/2025/05/home-1-icon1.svg" alt="Awards" className='w-20 absolute right-6.25' />
                     <img src="https://floka.casethemes.net/wp-content/uploads/2025/05/home-1-icon2.svg" alt="Awards" className='w-20 absolute right-6.25 top-18' />
+
+                    {/* CEO image */}
                     <div className='ceo-img-container bottom-0 inline-block'>
                         <img src={ceoImage} alt="Awards" className='w-1/2' />
                     </div>
@@ -140,15 +154,14 @@ const About = () => {
             {/* Bottom Section */}
             <div className="relative overflow-hidden w-full py-6 my-5 funnel-font">
 
-                {/* LEFT FADE */}
+                {/* Left fade */}
                 <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-linear-to-r from-[#F5F5F5] to-transparent z-10"></div>
 
-                {/* RIGHT FADE */}
+                {/* Right fade */}
                 <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-linear-to-l from-[#F5F5F5] to-transparent z-10"></div>
 
                 {/* SCROLLING TRACK */}
                 <div className="flex w-max animate-marquee">
-
                     {/* Text content */}
                     {[...marqueeText, ...marqueeText].map((text, i) => (
                         <span
@@ -158,7 +171,6 @@ const About = () => {
                             {text}
                         </span>
                     ))}
-
                 </div>
             </div>
 
