@@ -6,7 +6,7 @@ import lowCode from '../../assets/images/accordion-img4.webp'
 
 const Services = () => {
     return (
-        <section className='section-sm inter-font'>
+        <section className='section-sm inter-font' id='services'>
             <div className="services-box">
                 <h3 className='services-heading gradient-overlay'>
                     Company

@@ -6,16 +6,11 @@
 }
 
 .nav-container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-}
-
-.nav-links a,
-.mobile-menu a {
-    text-decoration: none;
-    font-size: 18px;
 }
 
 /* Menu Icon */
@@ -23,13 +18,16 @@
     display: none;
     font-size: 24px;
     cursor: pointer;
+    margin-left: auto;
 }
 
 /* Desktop Nav */
 .nav-links {
     display: flex;
     gap: 40px;
+    margin-left: auto;
 }
+
 
 /* Mobile Nav */
 .mobile-menu {
@@ -37,9 +35,7 @@
     top: 0;
     left: 0;
     transform: translateX(-100%);
-    /* hide */
     width: 70%;
-    /* better for mobile */
     max-width: 300px;
     height: 100%;
     background: #fff;
