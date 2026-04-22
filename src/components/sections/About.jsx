@@ -21,7 +21,7 @@ const About = () => {
             <h2 className='-mb-2.5'>ABOUT US</h2>
 
             {/* Divider */}
-            <div className="divider"></div>
+            <div className="hr-divider"></div>
 
             {/* Top section */}
             <div className='grid gap-10 md:grid-cols-5 my-5'>
@@ -75,7 +75,7 @@ const About = () => {
                     <p className='dark-font-3'>Years of experience</p>
 
                     {/* Divider */}
-                    <div className='divider'></div>
+                    <div className='hr-divider'></div>
 
                     <p className='dark-font-2 text-lg mb-5'>Explore how we transform ideas into extraordinary digital experiences.</p>
 

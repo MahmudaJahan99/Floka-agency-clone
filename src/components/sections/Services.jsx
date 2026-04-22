@@ -146,7 +146,7 @@ const Services = () => {
                                 </div>
 
                                 <p className='text-5xl dark-font font-semibold mt-5 text-center'>4.9/5</p>
-                                <div className="divider"></div>
+                                <div className="hr-divider"></div>
                                 <p className='dark-font-2 text-xl font-semibold mb-5'>We offer end-to-end creative solutions that make brands unforgettable.</p>
                                 <div className='flex items-center font-semibold'>
                                     <div className='round-btn'>

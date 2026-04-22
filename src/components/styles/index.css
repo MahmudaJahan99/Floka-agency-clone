@@ -55,7 +55,7 @@ body {
 }
 
 /* DIVIDER */
-.divider {
+.hr-divider {
     border-top: 1px solid var(--font-dark-4);
     margin-block: 20px;
 }
