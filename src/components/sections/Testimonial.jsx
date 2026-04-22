@@ -53,13 +53,13 @@ const Testimonial = () => {
                 </div>
             </section>
 
-            <section id='testimonial' className='section-sm inter-font grid gap-5'>
+            <section id='testimonial' className='section-sm inter-font'>
                 {/* Title */}
                 <h3>USER FEEDBACKS</h3>
 
                 <div className="hr-divider"></div>
 
-                <div className='text-center md:text-left md:grid grid-cols-3'>
+                <div className='text-center md:text-left md:grid grid-cols-3 mb-5'>
                     <div></div>
                     <div className='big-font md:text-4xl funnel-font dark-font md:col-span-2 leading-10'>
                         Accelerating growth, and unlocking new potential.
@@ -72,21 +72,21 @@ const Testimonial = () => {
                     </div>
                 </div>
 
-                <div className='grid gap-5'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
                     {/* Card 1 */}
-                    <div className='flex flex-col gap-1 min-h-75'>
-                        <div className="white-card">
+                    <div className='flex flex-col gap-1 testimonial-card'>
+                        <div className="white-card small-hover">
                             <p>Nicolas K. Ellington</p>
                             <p>IT Specialist</p>
                         </div>
-                        <div className='white-card'>
-                            <div className='flex gap-2'>
+                        <div className='white-card grid gap-5 big-hover'>
+                            <span className='flex gap-2'>
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
-                            </div>
+                            </span>
                             <p>
                                 "As we continued to use their tool and found more use cases, our feature requests quickly found thier way into thier backlog."
                             </p>
@@ -95,8 +95,8 @@ const Testimonial = () => {
                     </div>
 
                     {/* Card 2 */}
-                    <div className='flex flex-col gap-1 min-h-75'>
-                        <div className='white-card'>
+                    <div className='flex flex-col gap-1 testimonial-card'>
+                        <div className='white-card grid gap-5 big-hover'>
                             <div className='flex gap-2'>
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
@@ -109,26 +109,26 @@ const Testimonial = () => {
                             </p>
                             <p>"GREAT DESIGN SOLUTIONS"</p>
                         </div>
-                        <div className="white-card">
+                        <div className="white-card small-hover">
                             <p>Julian T. Beaumont</p>
                             <p>IT Specialist</p>
                         </div>
                     </div>
 
                     {/* Card 3 */}
-                    <div className='flex flex-col gap-1 min-h-75'>
-                        <div className="white-card">
+                    <div className='flex flex-col gap-1 testimonial-card'>
+                        <div className="white-card small-hover">
                             <p>Felipe D. Hawthome</p>
                             <p>IT Specialist</p>
                         </div>
-                        <div className='white-card'>
-                            <div className='flex gap-2'>
+                        <div className='white-card grid gap-5 big-hover'>
+                            <span className='flex gap-2'>
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
-                            </div>
+                            </span>
                             <p>
                                 "As we continued to use their tool and found more use cases, our feature requests quickly found thier way into thier backlog."
                             </p>
@@ -137,21 +137,21 @@ const Testimonial = () => {
                     </div>
 
                     {/* Card 4 */}
-                    <div className='flex flex-col gap-1 min-h-75'>
-                        <div className='white-card'>
-                            <div className='flex gap-2'>
+                    <div className='flex flex-col gap-1 testimonial-card'>
+                        <div className='white-card grid gap-5 big-hover'>
+                            <span className='flex gap-2'>
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
-                            </div>
+                            </span>
                             <p>
                                 "As we continued to use their tool and found more use cases, our feature requests quickly found thier way into thier backlog."
                             </p>
                             <p>"GREAT DESIGN SOLUTIONS"</p>
                         </div>
-                        <div className="white-card">
+                        <div className="white-card small-hover">
                             <p>Javier C. Emerson</p>
                             <p>IT Specialist</p>
                         </div>

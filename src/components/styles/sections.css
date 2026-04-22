@@ -199,6 +199,37 @@ details {
   display: inline-block;
 }
 
+.testimonial-card div {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.testimonial-card div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--font-dark);
+  transform: scaleY(0);
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+
+.testimonial-card .big-hover::before {
+  transform-origin: bottom;
+}
+
+.testimonial-card .small-hover::before {
+  transform-origin: top;
+}
+
+.testimonial-card:hover div::before {
+  transform: scaleY(1);
+}
+
+.testimonial-card:hover div {
+  color: var(--font-light);
+}
 
 /******************** RESPONSIVE DESIGN ********************/
 /* Tablet */

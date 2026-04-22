@@ -8,7 +8,7 @@ import { FaFacebookF, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
 const Footer = () => {
     return (
         <footer className="section">
-            <div className="black-card">
+            <div className="black-card light-font">
                 {/* -- Top Title -- */}
                 <div className="footer-heading gradient-overlay">
                     <p>

@@ -36,6 +36,9 @@ body {
 .dark-font-4 {
     color: var(--font-dark-4);
 }
+.light-font {
+    color: var(--font-light);
+}
 
 /* FONT FAMILY */
 .funnel-font {

@@ -13,7 +13,7 @@ const Services = () => {
     return (
         <section id='services' className='section-sm inter-font'>
             {/* Accordion Card */}
-            <div className="black-card">
+            <div className="black-card light-font">
                 {/* Title */}
                 <h3 className='services-heading gradient-overlay'>
                     Company
