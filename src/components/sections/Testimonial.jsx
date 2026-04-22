@@ -97,13 +97,13 @@ const Testimonial = () => {
                     {/* Card 2 */}
                     <div className='flex flex-col gap-1 testimonial-card'>
                         <div className='white-card grid gap-5 big-hover'>
-                            <div className='flex gap-2'>
+                            <span className='flex gap-2'>
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
                                 <FaStar className='text-amber-600' />
-                            </div>
+                            </span>
                             <p>
                                 "As we continued to use their tool and found more use cases, our feature requests quickly found thier way into thier backlog."
                             </p>
