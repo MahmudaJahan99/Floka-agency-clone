@@ -1,8 +1,30 @@
 import React from 'react';
 import { AiTwotoneMessage } from 'react-icons/ai';
 import { IoLocationSharp } from 'react-icons/io5';
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+    const formRef = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            formRef.current,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
+            .then(() => {
+                alert('Message sent!');
+                formRef.current.reset();
+            })
+            .catch(() => {
+                alert('Failed to send message');
+            });
+    };
+
     return (
         <section id='contact' className='section-sm inter-font black-card grid md:grid-cols-2 gap-5'>
             {/* Content */}
@@ -32,33 +54,34 @@ const Contact = () => {
 
             {/* Form */}
             <div className='white-card dark-font'>
-                <form action="" className='grid gap-5'>
+                <form ref={formRef} onSubmit={sendEmail} className='grid gap-5'>
                     <p className='funnel-font text-center text-2xl'>Have a project in mind?</p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                        <input type="text" placeholder="YOUR NAME" />
-                        <input type="email" placeholder="BUSINESS EMAIL" />
+                        <input name="user_name" type="text" placeholder="YOUR NAME" />
+                        <input name="user_email" type="email" placeholder="BUSINESS EMAIL" />
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <select>
+                        <select name="budget">
                             <option value="" className='hidden'>BUDGET</option>
-                            <option>$1000</option>
-                            <option>$2000</option>
-                            <option>$3000</option>
-                            <option>$4000</option>
-                            <option>$5000</option>
+                            <option value="$1000">$1000</option>
+                            <option value="$2000">$2000</option>
+                            <option value="$3000">$3000</option>
+                            <option value="$4000">$4000</option>
+                            <option value="$5000">$5000</option>
                         </select>
-                        <select> <option value=""  className='hidden'>SERVICES</option>
-                            <option>Game Design</option>
-                            <option>Product Design</option>
-                            <option>Web Design</option>
+                        <select name="service">
+                            <option value="" className='hidden'>SERVICES</option>
+                            <option value="Game-Design">Game Design</option>
+                            <option value="Product-Design">Product Design</option>
+                            <option value="Web-Design">Web Design</option>
                         </select>
                     </div>
 
-                    <textarea placeholder="MESSAGE" rows="4" ></textarea>
+                    <textarea name="message" placeholder="MESSAGE" rows="4" ></textarea>
 
-                    <button className='black-card text-white'>SEND</button>
+                    <button type='submit' className='black-card text-white'>SEND</button>
                 </form>
             </div>
         </section>
