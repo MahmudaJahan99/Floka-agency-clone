@@ -274,6 +274,11 @@ form textarea:focus {
     bottom: 40px;
     left: 70px;
   }
+
+/********** CONTACT SECTION **********/
+  #contact {
+    padding-block: 40px;
+  }
 }
 
 /* Desktop */
@@ -288,5 +293,10 @@ form textarea:focus {
   /********** SERVICES 2 SECTION **********/
   .projects-imgs-container img {
     width: 80px;
+  }
+
+  /********** CONTACT SECTION **********/
+  #contact {
+    padding: 40px;
   }
 }

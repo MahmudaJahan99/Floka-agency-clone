@@ -33,7 +33,7 @@ const Navbar = () => {
                         <a href="#">Home</a>
                         <a href="#about">About</a>
                         <a href="#services">Services</a>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </div>
 
                     <div className="menu-toggle" onClick={toggleMenu}>
@@ -47,7 +47,7 @@ const Navbar = () => {
                     <a href="#" onClick={closeMenu}>Home</a>
                     <a href="#about" onClick={closeMenu}>About</a>
                     <a href="#services" onClick={closeMenu}>Services</a>
-                    <a href="#" onClick={closeMenu}>Contact</a>
+                    <a href="#contact" onClick={closeMenu}>Contact</a>
                 </div>
             </nav>
 

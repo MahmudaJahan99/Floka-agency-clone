@@ -28,12 +28,12 @@ const Contact = () => {
     return (
         <section id='contact' className='section-sm inter-font black-card grid md:grid-cols-2 gap-5'>
             {/* Content */}
-            <div>
+            <div className='flex flex-col'>
                 {/* title */}
                 <h3>GET IN TOUCH</h3>
                 <p className='text-2xl md:text-4xl funnel-font my-5'>Tell us about your project—whether it’s a website, SEO, or marketing.</p>
 
-                <div className='dark-font-3 grid gap-5'>
+                <div className='dark-font-3 grid gap-5 mt-auto'>
                     <div>
                         <h4 className='flex items-center gap-2 text-white'>
                             <span><AiTwotoneMessage /></span>
