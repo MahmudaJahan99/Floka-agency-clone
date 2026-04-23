@@ -12,6 +12,10 @@ import teamMember2 from '../../assets/images/team-member-2.jpg'
 import teamMember3 from '../../assets/images/team-member-3.jpg'
 import { FaStar } from 'react-icons/fa6';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { Autoplay } from 'swiper/modules';
+
 const Testimonial = () => {
     return (
         <>
@@ -72,91 +76,113 @@ const Testimonial = () => {
                     </div>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
+                <Swiper
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    loop={true}
+                    modules={[Autoplay]}
+                    autoplay={{ delay: 3000 }}
+                    breakpoints={{
+                        768: { slidesPerView: 2 },
+                        1024: { slidesPerView: 3 },
+                    }}
+                >
                     {/* Card 1 */}
-                    <div className='flex flex-col gap-1 testimonial-card'>
-                        <div className="white-card small-hover">
-                            <p>Nicolas K. Ellington</p>
-                            <p>IT Specialist</p>
+                    <SwiperSlide>
+                        <div className='flex flex-col gap-1 testimonial-card'>
+                            <div className="white-card small-hover">
+                                <p>Nicolas K. Ellington</p>
+                                <p>IT Specialist</p>
+                            </div>
+                            <div className='white-card grid gap-5 big-hover'>
+                                <span className='flex gap-2'>
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                </span>
+                                <p>
+                                    "As we continued to use their tool and found more use cases, our feature requests quickly found thier way into thier backlog."
+                                </p>
+                                <p>"GREAT DESIGN SOLUTIONS"</p>
+                            </div>
                         </div>
-                        <div className='white-card grid gap-5 big-hover'>
-                            <span className='flex gap-2'>
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                            </span>
-                            <p>
-                                "As we continued to use their tool and found more use cases, our feature requests quickly found thier way into thier backlog."
-                            </p>
-                            <p>"GREAT DESIGN SOLUTIONS"</p>
-                        </div>
-                    </div>
+                    </SwiperSlide>
+
 
                     {/* Card 2 */}
-                    <div className='flex flex-col gap-1 testimonial-card'>
-                        <div className='white-card grid gap-5 big-hover'>
-                            <span className='flex gap-2'>
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                            </span>
-                            <p>
-                                "As we continued to use their tool and found more use cases, our feature requests quickly found thier way into thier backlog."
-                            </p>
-                            <p>"GREAT DESIGN SOLUTIONS"</p>
+                    <SwiperSlide>
+                        <div className='flex flex-col gap-1 testimonial-card'>
+                            <div className='white-card grid gap-5 big-hover'>
+                                <span className='flex gap-2'>
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                </span>
+                                <p>
+                                    "As we continued to use their tool and found more use cases, our feature requests quickly found thier way into thier backlog."
+                                </p>
+                                <p>"GREAT DESIGN SOLUTIONS"</p>
+                            </div>
+                            <div className="white-card small-hover">
+                                <p>Julian T. Beaumont</p>
+                                <p>IT Specialist</p>
+                            </div>
                         </div>
-                        <div className="white-card small-hover">
-                            <p>Julian T. Beaumont</p>
-                            <p>IT Specialist</p>
-                        </div>
-                    </div>
+                    </SwiperSlide>
+
 
                     {/* Card 3 */}
-                    <div className='flex flex-col gap-1 testimonial-card'>
-                        <div className="white-card small-hover">
-                            <p>Felipe D. Hawthome</p>
-                            <p>IT Specialist</p>
+                    <SwiperSlide>
+                        <div className='flex flex-col gap-1 testimonial-card'>
+                            <div className="white-card small-hover">
+                                <p>Felipe D. Hawthome</p>
+                                <p>IT Specialist</p>
+                            </div>
+                            <div className='white-card grid gap-5 big-hover'>
+                                <span className='flex gap-2'>
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                </span>
+                                <p>
+                                    "As we continued to use their tool and found more use cases, our feature requests quickly found thier way into thier backlog."
+                                </p>
+                                <p>"GREAT DESIGN SOLUTIONS"</p>
+                            </div>
                         </div>
-                        <div className='white-card grid gap-5 big-hover'>
-                            <span className='flex gap-2'>
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                            </span>
-                            <p>
-                                "As we continued to use their tool and found more use cases, our feature requests quickly found thier way into thier backlog."
-                            </p>
-                            <p>"GREAT DESIGN SOLUTIONS"</p>
-                        </div>
-                    </div>
+                    </SwiperSlide>
+
 
                     {/* Card 4 */}
-                    <div className='flex flex-col gap-1 testimonial-card'>
-                        <div className='white-card grid gap-5 big-hover'>
-                            <span className='flex gap-2'>
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                                <FaStar className='text-amber-600' />
-                            </span>
-                            <p>
-                                "As we continued to use their tool and found more use cases, our feature requests quickly found thier way into thier backlog."
-                            </p>
-                            <p>"GREAT DESIGN SOLUTIONS"</p>
+                    <SwiperSlide>
+                        <div className='flex flex-col gap-1 testimonial-card'>
+                            <div className='white-card grid gap-5 big-hover'>
+                                <span className='flex gap-2'>
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                    <FaStar className='text-amber-600' />
+                                </span>
+                                <p>
+                                    "As we continued to use their tool and found more use cases, our feature requests quickly found thier way into thier backlog."
+                                </p>
+                                <p>"GREAT DESIGN SOLUTIONS"</p>
+                            </div>
+                            <div className="white-card small-hover">
+                                <p>Javier C. Emerson</p>
+                                <p>IT Specialist</p>
+                            </div>
                         </div>
-                        <div className="white-card small-hover">
-                            <p>Javier C. Emerson</p>
-                            <p>IT Specialist</p>
-                        </div>
-                    </div>
-                </div>
+                    </SwiperSlide>
+
+                </Swiper>
             </section>
         </>
     );
