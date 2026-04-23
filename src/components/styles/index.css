@@ -170,6 +170,6 @@ section {
 /* Tablet */
 @media (min-width: 768px) {
     .section-sm {
-        padding-inline: 50px;
+        margin-inline: 50px;
     }
 }

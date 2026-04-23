@@ -231,6 +231,35 @@ details {
   color: var(--font-light);
 }
 
+/********** CONTACT SECTION **********/
+#contact {
+  background-image: url(../../assets/images/contact-form-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--font-light);
+}
+
+#contact h3 {
+  color: var(--font-light);
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--font-dark-4);
+  border-radius: 15px;
+  outline: none;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none; /* remove default browser outline */
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+
 /******************** RESPONSIVE DESIGN ********************/
 /* Tablet */
 @media (min-width: 768px) {
