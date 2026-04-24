@@ -244,7 +244,9 @@ details {
   color: var(--font-light);
 }
 
-form input, form select, form textarea {
+form input,
+form select,
+form textarea {
   width: 100%;
   padding: 12px;
   background-color: var(--font-dark-4);
@@ -255,8 +257,26 @@ form input, form select, form textarea {
 form input:focus,
 form select:focus,
 form textarea:focus {
-  outline: none; /* remove default browser outline */
+  outline: none;
+  /* remove default browser outline */
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+
+/********** TEAM SECTION **********/
+.member-card {
+  background: #F5F5F5;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.team-details-container .member-img-container {
+  background: #D2B691;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 
@@ -275,7 +295,7 @@ form textarea:focus {
     left: 70px;
   }
 
-/********** CONTACT SECTION **********/
+  /********** CONTACT SECTION **********/
   #contact {
     padding-block: 40px;
   }
