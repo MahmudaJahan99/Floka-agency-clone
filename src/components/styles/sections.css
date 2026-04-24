@@ -277,6 +277,46 @@ form textarea:focus {
   background: #D2B691;
   border-radius: 20px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/* Social */
+.member-card .socials {
+  display: flex;
+  gap: 10px;
+}
+
+.member-card .socials a {
+  font-size: 10px;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid var(--font-dark-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: color 0.3s;
+  z-index: 1;
+}
+
+.team-details-container {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.team-fade {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  position: absolute; /* prevents layout stacking */
+}
+
+.team-show {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
 }
 
 

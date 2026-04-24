@@ -57,7 +57,7 @@ const Testimonial = () => {
                 </div>
             </section>
 
-            <section id='testimonial' className='section-sm inter-font'>
+            <section className='section-sm inter-font'>
                 {/* Title */}
                 <h3>USER FEEDBACKS</h3>
 
