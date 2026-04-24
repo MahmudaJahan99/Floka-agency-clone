@@ -24,9 +24,9 @@ const Navbar = () => {
             <nav className="navbar dark-font inter-font">
                 <div className="nav-container">
                     {/* Logo */}
-                    <div className="logo">
+                    <a className="logo" href="#">
                         <img src={logo} alt="Logo of Floka" className='w-3/5' />
-                    </div>
+                    </a>
 
                     {/* Links */}
                     <div className="nav-links text-xl">
