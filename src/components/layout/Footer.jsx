@@ -7,7 +7,7 @@ import { FaFacebookF, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
     return (
-        <footer className="section">
+        <footer className="section flex flex-col gap-5">
             <div className="black-card light-font">
                 {/* -- Top Title -- */}
                 <div className="footer-heading gradient-overlay">
@@ -65,7 +65,7 @@ const Footer = () => {
             </div>
 
             {/* -- Copyright -- */}
-            <p className="copyright">
+            <p className="copyright mt-auto">
                 © 2026 FLOKA. All rights reserved.
             </p>
         </footer>
