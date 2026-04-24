@@ -3,6 +3,8 @@ import '../styles/navbar.css';
 import { CiMenuFries } from 'react-icons/ci';
 import { IoCloseOutline } from 'react-icons/io5';
 import logo from '../../assets/images/logo.png'
+import navLinks from '../ui/navLinks'
+import scrollToSection from '../ui/scroll';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,10 +32,9 @@ const Navbar = () => {
 
                     {/* Links */}
                     <div className="nav-links text-xl">
-                        <a href="#">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#services">Services</a>
-                        <a href="#contact">Contact</a>
+                        {navLinks.map((link) => (
+                            <a key={link.id} href={`#${link.id}`} onclick={(e) => scrollToSection(e, link.id)}> {link.label}</a>
+                        ))}
                     </div>
 
                     <div className="menu-toggle" onClick={toggleMenu}>
@@ -44,10 +45,9 @@ const Navbar = () => {
 
                 {/* Mobile Menu */}
                 <div className={`mobile-menu text-xl ${isOpen ? 'active' : ''}`}>
-                    <a href="#" onClick={closeMenu}>Home</a>
-                    <a href="#about" onClick={closeMenu}>About</a>
-                    <a href="#services" onClick={closeMenu}>Services</a>
-                    <a href="#contact" onClick={closeMenu}>Contact</a>
+                    {navLinks.map((link) => (
+                            <a key={link.id} href={`#${link.id}`} onClick={(e) => {scrollToSection(e, link.id); closeMenu();}}> {link.label}</a>
+                        ))}
                 </div>
             </nav>
 
