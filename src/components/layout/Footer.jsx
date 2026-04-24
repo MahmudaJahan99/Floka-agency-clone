@@ -38,7 +38,6 @@ const Footer = () => {
                         <span><a href="#">Home</a></span>
                         <span><a href="#about">About</a></span>
                         <span><a href="#services">Services</a></span>
-                        <span><a href="#">Portfolio</a></span>
                         <span><a href="#contact">Contact</a></span>
                     </div>
 
@@ -57,9 +56,9 @@ const Footer = () => {
                         </div>
 
                         <div className="socials">
-                            <a href="#"><FaFacebookF /></a>
-                            <a href="#"><FaXTwitter /></a>
-                            <a href="#"><FaLinkedinIn /></a>
+                            <a href="https://www.facebook.com/"><FaFacebookF /></a>
+                            <a href="https://x.com/"><FaXTwitter /></a>
+                            <a href="https://www.linkedin.com/"><FaLinkedinIn /></a>
                         </div>
                     </div>
                 </div>

@@ -46,10 +46,10 @@ const Testimonial = () => {
                     <div className='company-logo-img'>
                         <img src={companyLogo7} />
                     </div>
-                    <div className='dark-font-2 flex flex-col justify-center items-center text-xs'>
+                    <a href='#contact' className='dark-font-2 flex flex-col justify-center items-center text-xs'>
                         <span>NEXT CAN BE YOU</span>
                         <span>LET'S TALK</span>
-                    </div>
+                    </a>
                 </div>
 
                 <div className='w-full max-h-lvh  overflow-hidden'>
@@ -76,6 +76,7 @@ const Testimonial = () => {
                     </div>
                 </div>
 
+                {/* Carousel */}
                 <Swiper
                     spaceBetween={20}
                     slidesPerView={1}

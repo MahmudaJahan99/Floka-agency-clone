@@ -30,12 +30,12 @@ const Team = () => {
                 <p className='dark-font-2'>What began over coffee-fueled brainstorming sessions has grown into a thriving digital agency dedicated to helping brands stand out.</p>
 
                 {/* JOIN US button */}
-                <div className='flex items-center font-semibold'>
+                <a href='#contact' className='flex items-center font-semibold'>
                     <div className='round-btn'>
                         <span className='-mt-1'>+</span>
                     </div>
                     <span className='ml-2.5 dark-font-2'>JOIN US</span>
-                </div>
+                </a>
 
                 {/* Feature image */}
                 <div className='w-full'>
@@ -59,9 +59,9 @@ const Team = () => {
                         </div>
 
                         <div className="socials">
-                            <a href="#"><FaFacebookF /></a>
-                            <a href="#"><FaXTwitter /></a>
-                            <a href="#"><FaLinkedinIn /></a>
+                            <a href="https://www.facebook.com/"><FaFacebookF /></a>
+                            <a href="https://x.com/"><FaXTwitter /></a>
+                            <a href="https://www.linkedin.com/"><FaLinkedinIn /></a>
                         </div>
                     </div>
 
@@ -75,9 +75,9 @@ const Team = () => {
                         </div>
 
                         <div className="socials">
-                            <a href="#"><FaFacebookF /></a>
-                            <a href="#"><FaXTwitter /></a>
-                            <a href="#"><FaLinkedinIn /></a>
+                            <a href="https://www.facebook.com/"><FaFacebookF /></a>
+                            <a href="https://x.com/"><FaXTwitter /></a>
+                            <a href="https://www.linkedin.com/"><FaLinkedinIn /></a>
                         </div>
                     </div>
 
@@ -91,9 +91,9 @@ const Team = () => {
                         </div>
 
                         <div className="socials">
-                            <a href="#"><FaFacebookF /></a>
-                            <a href="#"><FaXTwitter /></a>
-                            <a href="#"><FaLinkedinIn /></a>
+                            <a href="https://www.facebook.com/"><FaFacebookF /></a>
+                            <a href="https://x.com/"><FaXTwitter /></a>
+                            <a href="https://www.linkedin.com/"><FaLinkedinIn /></a>
                         </div>
                     </div>
 
@@ -107,9 +107,9 @@ const Team = () => {
                         </div>
 
                         <div className="socials">
-                            <a href="#"><FaFacebookF /></a>
-                            <a href="#"><FaXTwitter /></a>
-                            <a href="#"><FaLinkedinIn /></a>
+                            <a href="https://www.facebook.com/"><FaFacebookF /></a>
+                            <a href="https://x.com/"><FaXTwitter /></a>
+                            <a href="https://www.linkedin.com/"><FaLinkedinIn /></a>
                         </div>
                     </div>
                 </div>
@@ -129,9 +129,9 @@ const Team = () => {
                         </div>
 
                         <div className="socials">
-                            <a href="#"><FaFacebookF /></a>
-                            <a href="#"><FaXTwitter /></a>
-                            <a href="#"><FaLinkedinIn /></a>
+                            <a href="https://www.facebook.com/"><FaFacebookF /></a>
+                            <a href="https://x.com/"><FaXTwitter /></a>
+                            <a href="https://www.linkedin.com/"><FaLinkedinIn /></a>
                         </div>
                     </div>
 
@@ -145,9 +145,9 @@ const Team = () => {
                         </div>
 
                         <div className="socials">
-                            <a href="#"><FaFacebookF /></a>
-                            <a href="#"><FaXTwitter /></a>
-                            <a href="#"><FaLinkedinIn /></a>
+                            <a href="https://www.facebook.com/"><FaFacebookF /></a>
+                            <a href="https://x.com/"><FaXTwitter /></a>
+                            <a href="https://www.linkedin.com/"><FaLinkedinIn /></a>
                         </div>
                     </div>
 
@@ -161,9 +161,9 @@ const Team = () => {
                         </div>
 
                         <div className="socials">
-                            <a href="#"><FaFacebookF /></a>
-                            <a href="#"><FaXTwitter /></a>
-                            <a href="#"><FaLinkedinIn /></a>
+                            <a href="https://www.facebook.com/"><FaFacebookF /></a>
+                            <a href="https://x.com/"><FaXTwitter /></a>
+                            <a href="https://www.linkedin.com/"><FaLinkedinIn /></a>
                         </div>
                     </div>
 
@@ -177,9 +177,9 @@ const Team = () => {
                         </div>
 
                         <div className="socials">
-                            <a href="#"><FaFacebookF /></a>
-                            <a href="#"><FaXTwitter /></a>
-                            <a href="#"><FaLinkedinIn /></a>
+                            <a href="https://www.facebook.com/"><FaFacebookF /></a>
+                            <a href="https://x.com/"><FaXTwitter /></a>
+                            <a href="https://www.linkedin.com/"><FaLinkedinIn /></a>
                         </div>
                     </div>
                 </div>

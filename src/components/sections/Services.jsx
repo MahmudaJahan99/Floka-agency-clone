@@ -148,12 +148,12 @@ const Services = () => {
                                 <p className='text-5xl dark-font font-semibold mt-5 text-center'>4.9/5</p>
                                 <div className="hr-divider"></div>
                                 <p className='dark-font-2 text-xl font-semibold mb-5'>We offer end-to-end creative solutions that make brands unforgettable.</p>
-                                <div className='flex items-center font-semibold'>
+                                <a className='flex items-center font-semibold' href='#contact'>
                                     <div className='round-btn'>
-                                        <span>+</span>
+                                        <span className='-mt-1'>+</span>
                                     </div>
                                     <span className='ml-2.5 dark-font-2'>HIRE US NOW</span>
-                                </div>
+                                </a>
                             </div>
 
                             {/* Card 4 */}
